@@ -1,7 +1,12 @@
-import 'package:aplicativo_engenharia_de_software/Screen/Home.dart';
-import 'package:aplicativo_engenharia_de_software/Screen/Login/Login.dart';
+import 'package:aplicativo_engenharia_de_software/Screen/Financeiro.dart';
+import 'package:aplicativo_engenharia_de_software/Screen/Pesquisa.dart';
+import 'package:aplicativo_engenharia_de_software/Screen/favoritos.dart';
+import 'package:aplicativo_engenharia_de_software/Screen/home.dart';
+import 'package:aplicativo_engenharia_de_software/Screen/Login/login.dart';
 import 'package:aplicativo_engenharia_de_software/Screen/Login/criar_conta.dart';
 import 'package:aplicativo_engenharia_de_software/Screen/Login/relogin.dart';
+import 'package:aplicativo_engenharia_de_software/Screen/imoveis.dart';
+import 'package:aplicativo_engenharia_de_software/Screen/perfil.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -11,7 +16,7 @@ import 'package:go_router/go_router.dart';
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 final routes = GoRouter(
-    initialLocation: '/loading_page',
+    initialLocation: '/',
     navigatorKey: navigatorKey,
     routes: <RouteBase>[
       GoRoute(path: '/home', builder: (((context, state) => const Home()))),
@@ -20,6 +25,18 @@ final routes = GoRouter(
           path: '/register', builder: (((context, state) => const Register()))),
       GoRoute(
           path: '/relogin', builder: (((context, state) => const Relogin()))),
+      GoRoute(
+          path: '/pesquisar',
+          builder: (((context, state) => const Pesquisa()))),
+      GoRoute(
+          path: '/financeiro',
+          builder: (((context, state) => const Financeiro()))),
+      GoRoute(
+          path: '/favoritos',
+          builder: (((context, state) => const Favoritos()))),
+      GoRoute(path: '/perfil', builder: (((context, state) => const Perfil()))),
+      GoRoute(
+          path: '/imoveis', builder: (((context, state) => const Imoveis()))),
 
       /*   GoRoute(
           path: '/suporte',

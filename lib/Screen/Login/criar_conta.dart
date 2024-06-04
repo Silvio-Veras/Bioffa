@@ -41,218 +41,230 @@ class _RegisterState extends State<Register> {
               Padding(
                 padding:
                     EdgeInsets.all(MediaQuery.of(context).size.height * 0.04),
-                child: Column(
-                  children: [
-                    const Text(
-                      'Criar conta',
-                      style: TextStyle(
-                          fontSize: 30,
-                          fontWeight: FontWeight.w600,
-                          color: CustomColors.customWhite),
-                    ),
-                    const SizedBox(
-                      height: 15,
-                    ),
-                    Form(
-                      child: Column(
-                        children: [
-                          TextFormField(
-                            style: const TextStyle(
-                                color: CustomColors.customWhite),
-                            decoration: const InputDecoration(
-                              filled: true,
-                              fillColor: CustomColors.customBlack,
-                              hintStyle:
-                                  TextStyle(color: CustomColors.customWhite),
-                              border: OutlineInputBorder(),
-                              hintText: 'Nome',
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 8,
-                          ),
-                          TextFormField(
-                            style: const TextStyle(
-                                color: CustomColors.customWhite),
-                            decoration: const InputDecoration(
-                              filled: true,
-                              fillColor: CustomColors.customBlack,
-                              hintStyle:
-                                  TextStyle(color: CustomColors.customWhite),
-                              border: OutlineInputBorder(),
-                              hintText: 'Usuário',
-                            ),
-                            keyboardType: TextInputType.number,
-                          ),
-                          const SizedBox(
-                            height: 8,
-                          ),
-                          TextFormField(
-                            style: const TextStyle(
-                                color: CustomColors.customWhite),
-                            decoration: const InputDecoration(
-                              filled: true,
-                              fillColor: CustomColors.customBlack,
-                              hintStyle:
-                                  TextStyle(color: CustomColors.customWhite),
-                              border: OutlineInputBorder(),
-                              hintText: 'CPF',
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 8,
-                          ),
-                          TextFormField(
-                            style: const TextStyle(
-                                color: CustomColors.customWhite),
-                            decoration: const InputDecoration(
-                              filled: true,
-                              fillColor: CustomColors.customBlack,
-                              hintStyle:
-                                  TextStyle(color: CustomColors.customWhite),
-                              border: OutlineInputBorder(),
-                              hintText: 'E-mail',
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 8,
-                          ),
-                          TextFormField(
-                            style: const TextStyle(
-                                color: CustomColors.customWhite),
-                            decoration: const InputDecoration(
-                              filled: true,
-                              fillColor: CustomColors.customBlack,
-                              hintStyle:
-                                  TextStyle(color: CustomColors.customWhite),
-                              border: OutlineInputBorder(),
-                              hintText: 'Data de nascimento',
-                            ),
-                            keyboardType: TextInputType.datetime,
-                          ),
-                          const SizedBox(
-                            height: 8,
-                          ),
-                          TextFormField(
-                            style: const TextStyle(
-                                color: CustomColors.customWhite),
-                            decoration: const InputDecoration(
-                              filled: true,
-                              fillColor: CustomColors.customBlack,
-                              hintStyle:
-                                  TextStyle(color: CustomColors.customWhite),
-                              border: OutlineInputBorder(),
-                              hintText: 'CEP',
-                            ),
-                            keyboardType: TextInputType.number,
-                          ),
-                          const SizedBox(
-                            height: 8,
-                          ),
-                          TextFormField(
-                            style: const TextStyle(
-                                color: CustomColors.customWhite),
-                            decoration: const InputDecoration(
-                              filled: true,
-                              fillColor: CustomColors.customBlack,
-                              hintStyle:
-                                  TextStyle(color: CustomColors.customWhite),
-                              border: OutlineInputBorder(),
-                              hintText: 'Cidade',
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 8,
-                          ),
-                          TextFormField(
-                            style: const TextStyle(
-                                color: CustomColors.customWhite),
-                            decoration: const InputDecoration(
-                              filled: true,
-                              fillColor: CustomColors.customBlack,
-                              hintStyle:
-                                  TextStyle(color: CustomColors.customWhite),
-                              border: OutlineInputBorder(),
-                              hintText: 'Rua',
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 8,
-                          ),
-                          TextFormField(
-                            style: const TextStyle(
-                                color: CustomColors.customWhite),
-                            decoration: const InputDecoration(
-                              filled: true,
-                              fillColor: CustomColors.customBlack,
-                              hintStyle:
-                                  TextStyle(color: CustomColors.customWhite),
-                              border: OutlineInputBorder(),
-                              hintText: 'Número',
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 8,
-                          ),
-                          TextFormField(
-                            style: const TextStyle(
-                                color: CustomColors.customWhite),
-                            decoration: const InputDecoration(
-                              filled: true,
-                              fillColor: CustomColors.customBlack,
-                              hintStyle:
-                                  TextStyle(color: CustomColors.customWhite),
-                              border: OutlineInputBorder(),
-                              hintText: 'Complemento',
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 8,
-                          ),
-                          TextFormField(
-                            style: const TextStyle(
-                                color: CustomColors.customWhite),
-                            decoration: const InputDecoration(
-                              filled: true,
-                              fillColor: CustomColors.customBlack,
-                              hintStyle:
-                                  TextStyle(color: CustomColors.customWhite),
-                              border: OutlineInputBorder(),
-                              hintText: 'Senha',
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 8,
-                          ),
-                          TextFormField(
-                            style: const TextStyle(
-                                color: CustomColors.customWhite),
-                            decoration: const InputDecoration(
-                              filled: true,
-                              fillColor: Color.fromARGB(172, 116, 115, 115),
-                              hintStyle:
-                                  TextStyle(color: CustomColors.customBlack),
-                              border: OutlineInputBorder(),
-                              hintText: 'Confirmar senha',
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 15,
-                          ),
-                          ElevatedButton(
-                            onPressed: () {
-                              context.push('/login'); //ainda nao tem
-                            },
-                            style: buttonEntrarLogin(context),
-                            child: const Text(
-                              "Criar conta",
-                              style: loginEntraLogin,
-                            ),
-                          )
-                        ],
+                child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.white),
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * 0.02,
                       ),
-                    )
-                  ],
+                      const Text(
+                        'Criar conta',
+                        style: TextStyle(
+                            fontSize: 30,
+                            fontWeight: FontWeight.w600,
+                            color: CustomColors.customPurpleBioffa),
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      Form(
+                        child: Padding(
+                          padding: EdgeInsets.all(
+                              MediaQuery.of(context).size.width * 0.05),
+                          child: Column(
+                            children: [
+                              TextFormField(
+                                style: const TextStyle(
+                                    color: CustomColors.customGrayText),
+                                decoration: const InputDecoration(
+                                  filled: true,
+                                  fillColor: CustomColors.customWhite,
+                                  hintStyle: TextStyle(
+                                      color: CustomColors.customGrayText),
+                                  border: OutlineInputBorder(),
+                                  hintText: 'Nome',
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              TextFormField(
+                                style: const TextStyle(
+                                    color: CustomColors.customGrayText),
+                                decoration: const InputDecoration(
+                                  filled: true,
+                                  fillColor: CustomColors.customWhite,
+                                  hintStyle: TextStyle(
+                                      color: CustomColors.customGrayText),
+                                  border: OutlineInputBorder(),
+                                  hintText: 'Usuário',
+                                ),
+                                keyboardType: TextInputType.number,
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              TextFormField(
+                                style: const TextStyle(
+                                    color: CustomColors.customGrayText),
+                                decoration: const InputDecoration(
+                                  filled: true,
+                                  fillColor: CustomColors.customWhite,
+                                  hintStyle: TextStyle(
+                                      color: CustomColors.customGrayText),
+                                  border: OutlineInputBorder(),
+                                  hintText: 'CPF',
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              TextFormField(
+                                style: const TextStyle(
+                                    color: CustomColors.customGrayText),
+                                decoration: const InputDecoration(
+                                  filled: true,
+                                  fillColor: CustomColors.customWhite,
+                                  hintStyle: TextStyle(
+                                      color: CustomColors.customGrayText),
+                                  border: OutlineInputBorder(),
+                                  hintText: 'E-mail',
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              TextFormField(
+                                style: const TextStyle(
+                                    color: CustomColors.customGrayText),
+                                decoration: const InputDecoration(
+                                  filled: true,
+                                  fillColor: CustomColors.customWhite,
+                                  hintStyle: TextStyle(
+                                      color: CustomColors.customGrayText),
+                                  border: OutlineInputBorder(),
+                                  hintText: 'Data de nascimento',
+                                ),
+                                keyboardType: TextInputType.datetime,
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              TextFormField(
+                                style: const TextStyle(
+                                    color: CustomColors.customGrayText),
+                                decoration: const InputDecoration(
+                                  filled: true,
+                                  fillColor: CustomColors.customWhite,
+                                  hintStyle: TextStyle(
+                                      color: CustomColors.customGrayText),
+                                  border: OutlineInputBorder(),
+                                  hintText: 'CEP',
+                                ),
+                                keyboardType: TextInputType.number,
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              TextFormField(
+                                style: const TextStyle(
+                                    color: CustomColors.customGrayText),
+                                decoration: const InputDecoration(
+                                  filled: true,
+                                  fillColor: CustomColors.customWhite,
+                                  hintStyle: TextStyle(
+                                      color: CustomColors.customGrayText),
+                                  border: OutlineInputBorder(),
+                                  hintText: 'Cidade',
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              TextFormField(
+                                style: const TextStyle(
+                                    color: CustomColors.customGrayText),
+                                decoration: const InputDecoration(
+                                  filled: true,
+                                  fillColor: CustomColors.customWhite,
+                                  hintStyle: TextStyle(
+                                      color: CustomColors.customGrayText),
+                                  border: OutlineInputBorder(),
+                                  hintText: 'Rua',
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              TextFormField(
+                                style: const TextStyle(
+                                    color: CustomColors.customGrayText),
+                                decoration: const InputDecoration(
+                                  filled: true,
+                                  fillColor: CustomColors.customWhite,
+                                  hintStyle: TextStyle(
+                                      color: CustomColors.customGrayText),
+                                  border: OutlineInputBorder(),
+                                  hintText: 'Número',
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              TextFormField(
+                                style: const TextStyle(
+                                    color: CustomColors.customGrayText),
+                                decoration: const InputDecoration(
+                                  filled: true,
+                                  fillColor: CustomColors.customWhite,
+                                  hintStyle: TextStyle(
+                                      color: CustomColors.customGrayText),
+                                  border: OutlineInputBorder(),
+                                  hintText: 'Complemento',
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              TextFormField(
+                                style: const TextStyle(
+                                    color: CustomColors.customGrayText),
+                                decoration: const InputDecoration(
+                                  filled: true,
+                                  fillColor: CustomColors.customWhite,
+                                  hintStyle: TextStyle(
+                                      color: CustomColors.customGrayText),
+                                  border: OutlineInputBorder(),
+                                  hintText: 'Senha',
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              TextFormField(
+                                style: const TextStyle(
+                                    color: CustomColors.customGrayText),
+                                decoration: const InputDecoration(
+                                  filled: true,
+                                  fillColor: CustomColors.customWhite,
+                                  hintStyle: TextStyle(
+                                      color: CustomColors.customGrayText),
+                                  border: OutlineInputBorder(),
+                                  hintText: 'Confirmar senha',
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              ElevatedButton(
+                                onPressed: () {
+                                  context.push('/'); //ainda nao tem
+                                },
+                                style: buttonEntrarLogin(context),
+                                child: const Text(
+                                  "Criar conta",
+                                  style: loginEntraLogin,
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               )
             ],

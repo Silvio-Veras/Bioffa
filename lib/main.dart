@@ -1,5 +1,5 @@
-import 'package:aplicativo_engenharia_de_software/Screen/Home.dart';
-import 'package:aplicativo_engenharia_de_software/Screen/Login/Login.dart';
+import 'package:aplicativo_engenharia_de_software/Screen/home.dart';
+import 'package:aplicativo_engenharia_de_software/Screen/Login/login.dart';
 import 'package:aplicativo_engenharia_de_software/Screen/Login/relogin.dart';
 import 'package:aplicativo_engenharia_de_software/Screen/applocale.dart';
 import 'package:aplicativo_engenharia_de_software/Screen/Login/criar_conta.dart';

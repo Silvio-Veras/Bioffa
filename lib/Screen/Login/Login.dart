@@ -111,12 +111,10 @@ class _LoginState extends State<Login> {
                                             bottom: 12.0,
                                             right: 12.0,
                                           ),
-                                          child: SvgPicture.asset(
-                                            'assets/icons/eye-open.svg',
+                                          child: Image.asset(
+                                            'assets/icons/person.png',
                                             width: 25,
-                                            colorFilter: const ColorFilter.mode(
-                                                CustomColors.customGray,
-                                                BlendMode.srcIn),
+                                            color: CustomColors.customGray,
                                           ),
                                         ),
                                       ],
@@ -160,12 +158,10 @@ class _LoginState extends State<Login> {
                                             bottom: 12.0,
                                             right: 12.0,
                                           ),
-                                          child: SvgPicture.asset(
-                                            'assets/icons/eye-open.svg',
+                                          child: Image.asset(
+                                            'assets/icons/pngegg.png',
                                             width: 25,
-                                            colorFilter: const ColorFilter.mode(
-                                                CustomColors.customGray,
-                                                BlendMode.srcIn),
+                                            color: CustomColors.customGray,
                                           ),
                                         ),
                                       ],
