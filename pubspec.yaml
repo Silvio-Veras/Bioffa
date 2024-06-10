@@ -48,6 +48,7 @@ dependencies:
   image_cropper: ^5.0.1
   flutter_localization: ^0.2.0
   searchfield: ^1.0.1
+ 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -89,9 +90,17 @@ flutter:
     - assets/icons/star.png
     - assets/icons/casa.jpg
     - assets/icons/casa3.jpg
+    - assets/icons/casa4.jpg
+    - assets/icons/casa5.jpg
+    - assets/icons/casa6.jpg
     - assets/icons/cifrao.png
     - assets/icons/lupa.png
     - assets/icons/ping.png
+    - assets/icons/suport.png
+    - assets/icons/whatsapp.png
+    - assets/icons/email.png
+    - assets/icons/logo_bioffa.jpeg
+    - assets/icons/logo_biofffa2.jpeg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

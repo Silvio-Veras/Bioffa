@@ -55,23 +55,20 @@ class _ImoveisState extends State<Imoveis> {
                                 MediaQuery.of(context).size.width * 0.07),
                         child: GestureDetector(
                           onTap: () => context.pop(),
-                          child: SvgPicture.asset(
-                            'assets/icons/eye-open.svg',
-                            color: CustomColors.customWhite,
-                            height: MediaQuery.of(context).size.height * 0.04,
-                          ),
+                          child: Image.asset('assets/icons/arrow_left.png',
+                              width: 35, color: CustomColors.customWhite),
                         ),
                       ),
-                      SvgPicture.asset(
-                        'assets/icons/eye-open.svg',
+                      Image.asset(
+                        'assets/icons/home.png',
+                        width: 35,
                         color: CustomColors.customWhite,
-                        height: MediaQuery.of(context).size.height * 0.04,
                       ),
                       Padding(
                         padding: EdgeInsets.only(
                             left: MediaQuery.of(context).size.width * 0.03),
                         child: const Text(
-                          'Meus imoveis',
+                          'Meus imóveis',
                           style: TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
@@ -103,9 +100,8 @@ class _ImoveisState extends State<Imoveis> {
                       ),
                       child: Row(
                         children: [
-                          SvgPicture.asset(
-                            'assets/icons/eye-open.svg',
-                            color: CustomColors.customBlack,
+                          Image.asset(
+                            'assets/icons/casa1.jpg',
                             height: MediaQuery.of(context).size.height * 0.1,
                           ),
                           const SizedBox(
@@ -117,77 +113,181 @@ class _ImoveisState extends State<Imoveis> {
                             children: [
                               Row(
                                 children: [
-                                  Text(sugestaoHome['casa5']['nome']),
+                                  Text(sugestaoHome['casa2']['nome']),
                                   const SizedBox(
                                     width: 50,
                                   ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.015,
+                                  Image.asset(
+                                    'assets/icons/heart.png',
+                                    width: 25,
                                   ),
                                 ],
                               ),
                               Text(
-                                '${sugestaoHome['casa5']['endereco']['rua']} bairro:${sugestaoHome['casa5']['endereco']['bairro']}',
+                                '${sugestaoHome['casa2']['endereco']['rua']} bairro:${sugestaoHome['casa2']['endereco']['bairro']}',
                                 style: const TextStyle(fontSize: 12),
                               ),
                               Text(
-                                'Suites: ${sugestaoHome['casa5']['comodos']['suites']}',
+                                'Suites: ${sugestaoHome['casa2']['comodos']['suites']}',
                                 style: const TextStyle(fontSize: 10),
                               ),
                               Text(
-                                'Quartos: ${sugestaoHome['casa5']['comodos']['quartos']}',
+                                'Quartos: ${sugestaoHome['casa2']['comodos']['quartos']}',
                                 style: const TextStyle(fontSize: 10),
                               ),
                               Text(
-                                'Banheiros: ${sugestaoHome['casa5']['comodos']['banheiros']}',
+                                'Banheiros: ${sugestaoHome['casa2']['comodos']['banheiros']}',
                                 style: const TextStyle(fontSize: 10),
                               ),
                               Row(
                                 children: [
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
+                                  Image.asset(
+                                    'assets/icons/star.png',
                                     height: MediaQuery.of(context).size.height *
                                         0.01,
                                   ),
                                   const SizedBox(
                                     width: 2,
                                   ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
+                                  Image.asset(
+                                    'assets/icons/star.png',
                                     height: MediaQuery.of(context).size.height *
                                         0.01,
                                   ),
                                   const SizedBox(
                                     width: 2,
                                   ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
+                                  Image.asset(
+                                    'assets/icons/star.png',
                                     height: MediaQuery.of(context).size.height *
                                         0.01,
                                   ),
                                   const SizedBox(
                                     width: 2,
                                   ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
+                                  Image.asset(
+                                    'assets/icons/star.png',
                                     height: MediaQuery.of(context).size.height *
                                         0.01,
                                   ),
                                   const SizedBox(
                                     width: 2,
                                   ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
+                                  Image.asset(
+                                    'assets/icons/star.png',
                                     height: MediaQuery.of(context).size.height *
                                         0.01,
+                                  ),
+                                  const SizedBox(
+                                    width: 5,
+                                  ),
+                                  const SizedBox(
+                                    width: 25,
+                                  ),
+                                  const Text(
+                                    'RS 3.000',
+                                    style: TextStyle(
+                                        fontSize: 20,
+                                        color: CustomColors.customPurpleBioffa),
+                                  )
+                                ],
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height * 0.03,
+                  ),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Container(
+                      height: MediaQuery.of(context).size.height * 0.15,
+                      decoration: BoxDecoration(
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(30)),
+                        border: Border.all(
+                          color: CustomColors.customGray, // Cor da borda
+                          width: 1.0, // Largura da borda
+                        ),
+                      ),
+                      child: Row(
+                        children: [
+                          Image.asset(
+                            'assets/icons/casa.jpg',
+                            height: MediaQuery.of(context).size.height * 0.13,
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Row(
+                                children: [
+                                  Text(sugestaoHome['casa6']['nome']),
+                                  const SizedBox(
+                                    width: 50,
+                                  ),
+                                  Image.asset(
+                                    'assets/icons/heart.png',
+                                    width: 25,
+                                    color: CustomColors.customGray,
+                                  ),
+                                ],
+                              ),
+                              Text(
+                                '${sugestaoHome['casa6']['endereco']['rua']} bairro:${sugestaoHome['casa6']['endereco']['bairro']}',
+                                style: const TextStyle(fontSize: 12),
+                              ),
+                              Text(
+                                'Suites: ${sugestaoHome['casa6']['comodos']['suites']}',
+                                style: const TextStyle(fontSize: 10),
+                              ),
+                              Text(
+                                'Quartos: ${sugestaoHome['casa6']['comodos']['quartos']}',
+                                style: const TextStyle(fontSize: 10),
+                              ),
+                              Text(
+                                'Banheiros: ${sugestaoHome['casa6']['comodos']['banheiros']}',
+                                style: const TextStyle(fontSize: 10),
+                              ),
+                              Row(
+                                children: [
+                                  Image.asset(
+                                    'assets/icons/star.png',
+                                    height: MediaQuery.of(context).size.height *
+                                        0.01,
+                                  ),
+                                  const SizedBox(
+                                    width: 2,
+                                  ),
+                                  Image.asset(
+                                    'assets/icons/star.png',
+                                    height: MediaQuery.of(context).size.height *
+                                        0.01,
+                                  ),
+                                  const SizedBox(
+                                    width: 2,
+                                  ),
+                                  Image.asset(
+                                    'assets/icons/star.png',
+                                    height: MediaQuery.of(context).size.height *
+                                        0.01,
+                                  ),
+                                  const SizedBox(
+                                    width: 2,
+                                  ),
+                                  Image.asset(
+                                    'assets/icons/star.png',
+                                    height: MediaQuery.of(context).size.height *
+                                        0.01,
+                                  ),
+                                  const SizedBox(
+                                    width: 2,
                                   ),
                                   const SizedBox(
                                     width: 5,
@@ -226,9 +326,8 @@ class _ImoveisState extends State<Imoveis> {
                       ),
                       child: Row(
                         children: [
-                          SvgPicture.asset(
-                            'assets/icons/eye-open.svg',
-                            color: CustomColors.customBlack,
+                          Image.asset(
+                            'assets/icons/casa1.jpg',
                             height: MediaQuery.of(context).size.height * 0.1,
                           ),
                           const SizedBox(
@@ -240,77 +339,57 @@ class _ImoveisState extends State<Imoveis> {
                             children: [
                               Row(
                                 children: [
-                                  Text(sugestaoHome['casa6']['nome']),
+                                  Text(sugestaoHome['casa2']['nome']),
                                   const SizedBox(
                                     width: 50,
                                   ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.015,
+                                  Image.asset(
+                                    'assets/icons/heart.png',
+                                    width: 25,
                                   ),
                                 ],
                               ),
                               Text(
-                                '${sugestaoHome['casa6']['endereco']['rua']} bairro:${sugestaoHome['casa6']['endereco']['bairro']}',
+                                '${sugestaoHome['casa2']['endereco']['rua']} bairro:${sugestaoHome['casa2']['endereco']['bairro']}',
                                 style: const TextStyle(fontSize: 12),
                               ),
                               Text(
-                                'Suites: ${sugestaoHome['casa6']['comodos']['suites']}',
+                                'Suites: ${sugestaoHome['casa2']['comodos']['suites']}',
                                 style: const TextStyle(fontSize: 10),
                               ),
                               Text(
-                                'Quartos: ${sugestaoHome['casa6']['comodos']['quartos']}',
+                                'Quartos: ${sugestaoHome['casa2']['comodos']['quartos']}',
                                 style: const TextStyle(fontSize: 10),
                               ),
                               Text(
-                                'Banheiros: ${sugestaoHome['casa6']['comodos']['banheiros']}',
+                                'Banheiros: ${sugestaoHome['casa2']['comodos']['banheiros']}',
                                 style: const TextStyle(fontSize: 10),
                               ),
                               Row(
                                 children: [
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.01,
+                                  Image.asset(
+                                    'assets/icons/star.png',
+                                    width: 20,
                                   ),
                                   const SizedBox(
                                     width: 2,
                                   ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.01,
+                                  Image.asset(
+                                    'assets/icons/star.png',
+                                    width: 20,
                                   ),
                                   const SizedBox(
                                     width: 2,
                                   ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.01,
+                                  Image.asset(
+                                    'assets/icons/star.png',
+                                    width: 20,
                                   ),
                                   const SizedBox(
                                     width: 2,
                                   ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.01,
-                                  ),
                                   const SizedBox(
                                     width: 2,
-                                  ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.01,
                                   ),
                                   const SizedBox(
                                     width: 5,
@@ -319,7 +398,7 @@ class _ImoveisState extends State<Imoveis> {
                                     width: 25,
                                   ),
                                   const Text(
-                                    'RS 2.300',
+                                    'RS 3.000',
                                     style: TextStyle(
                                         fontSize: 20,
                                         color: CustomColors.customPurpleBioffa),
@@ -349,10 +428,9 @@ class _ImoveisState extends State<Imoveis> {
                       ),
                       child: Row(
                         children: [
-                          SvgPicture.asset(
-                            'assets/icons/eye-open.svg',
-                            color: CustomColors.customBlack,
-                            height: MediaQuery.of(context).size.height * 0.1,
+                          Image.asset(
+                            'assets/icons/casa5.jpg',
+                            height: MediaQuery.of(context).size.height * 0.09,
                           ),
                           const SizedBox(
                             width: 10,
@@ -363,77 +441,61 @@ class _ImoveisState extends State<Imoveis> {
                             children: [
                               Row(
                                 children: [
-                                  Text(sugestaoHome['casa4']['nome']),
+                                  Text(sugestaoHome['casa5']['nome']),
                                   const SizedBox(
                                     width: 50,
                                   ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.015,
+                                  Image.asset(
+                                    'assets/icons/heart.png',
+                                    width: 25,
                                   ),
                                 ],
                               ),
                               Text(
-                                '${sugestaoHome['casa4']['endereco']['rua']} bairro:${sugestaoHome['casa4']['endereco']['bairro']}',
+                                '${sugestaoHome['casa5']['endereco']['rua']} bairro:${sugestaoHome['casa5']['endereco']['bairro']}',
                                 style: const TextStyle(fontSize: 12),
                               ),
                               Text(
-                                'Suites: ${sugestaoHome['casa4']['comodos']['suites']}',
+                                'Suites: ${sugestaoHome['casa5']['comodos']['suites']}',
                                 style: const TextStyle(fontSize: 10),
                               ),
                               Text(
-                                'Quartos: ${sugestaoHome['casa4']['comodos']['quartos']}',
+                                'Quartos: ${sugestaoHome['casa5']['comodos']['quartos']}',
                                 style: const TextStyle(fontSize: 10),
                               ),
                               Text(
-                                'Banheiros: ${sugestaoHome['casa4']['comodos']['banheiros']}',
+                                'Banheiros: ${sugestaoHome['casa5']['comodos']['banheiros']}',
                                 style: const TextStyle(fontSize: 10),
                               ),
                               Row(
                                 children: [
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.01,
+                                  Image.asset(
+                                    'assets/icons/star.png',
+                                    width: 20,
                                   ),
                                   const SizedBox(
                                     width: 2,
                                   ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.01,
+                                  Image.asset(
+                                    'assets/icons/star.png',
+                                    width: 20,
                                   ),
                                   const SizedBox(
                                     width: 2,
                                   ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.01,
+                                  Image.asset(
+                                    'assets/icons/star.png',
+                                    width: 20,
                                   ),
                                   const SizedBox(
                                     width: 2,
                                   ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.01,
+                                  Image.asset(
+                                    'assets/icons/star.png',
+                                    width: 20,
                                   ),
                                   const SizedBox(
                                     width: 2,
-                                  ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.01,
                                   ),
                                   const SizedBox(
                                     width: 5,
@@ -442,130 +504,7 @@ class _ImoveisState extends State<Imoveis> {
                                     width: 25,
                                   ),
                                   const Text(
-                                    'RS 1.800',
-                                    style: TextStyle(
-                                        fontSize: 20,
-                                        color: CustomColors.customPurpleBioffa),
-                                  )
-                                ],
-                              )
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.03,
-                  ),
-                  GestureDetector(
-                    onTap: () {},
-                    child: Container(
-                      height: MediaQuery.of(context).size.height * 0.15,
-                      decoration: BoxDecoration(
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(30)),
-                        border: Border.all(
-                          color: CustomColors.customGray, // Cor da borda
-                          width: 1.0, // Largura da borda
-                        ),
-                      ),
-                      child: Row(
-                        children: [
-                          SvgPicture.asset(
-                            'assets/icons/eye-open.svg',
-                            color: CustomColors.customBlack,
-                            height: MediaQuery.of(context).size.height * 0.1,
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: [
-                              Row(
-                                children: [
-                                  Text(sugestaoHome['casa1']['nome']),
-                                  const SizedBox(
-                                    width: 50,
-                                  ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.015,
-                                  ),
-                                ],
-                              ),
-                              Text(
-                                '${sugestaoHome['casa1']['endereco']['rua']} bairro:${sugestaoHome['casa1']['endereco']['bairro']}',
-                                style: const TextStyle(fontSize: 12),
-                              ),
-                              Text(
-                                'Suites: ${sugestaoHome['casa1']['comodos']['suites']}',
-                                style: const TextStyle(fontSize: 10),
-                              ),
-                              Text(
-                                'Quartos: ${sugestaoHome['casa1']['comodos']['quartos']}',
-                                style: const TextStyle(fontSize: 10),
-                              ),
-                              Text(
-                                'Banheiros: ${sugestaoHome['casa1']['comodos']['banheiros']}',
-                                style: const TextStyle(fontSize: 10),
-                              ),
-                              Row(
-                                children: [
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.01,
-                                  ),
-                                  const SizedBox(
-                                    width: 2,
-                                  ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.01,
-                                  ),
-                                  const SizedBox(
-                                    width: 2,
-                                  ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.01,
-                                  ),
-                                  const SizedBox(
-                                    width: 2,
-                                  ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.01,
-                                  ),
-                                  const SizedBox(
-                                    width: 2,
-                                  ),
-                                  SvgPicture.asset(
-                                    'assets/icons/eye-open.svg',
-                                    color: CustomColors.customBlack,
-                                    height: MediaQuery.of(context).size.height *
-                                        0.01,
-                                  ),
-                                  const SizedBox(
-                                    width: 5,
-                                  ),
-                                  const SizedBox(
-                                    width: 25,
-                                  ),
-                                  const Text(
-                                    'RS 3.200',
+                                    'RS 2.200',
                                     style: TextStyle(
                                         fontSize: 20,
                                         color: CustomColors.customPurpleBioffa),

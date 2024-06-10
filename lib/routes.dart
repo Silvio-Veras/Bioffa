@@ -7,6 +7,7 @@ import 'package:aplicativo_engenharia_de_software/Screen/Login/criar_conta.dart'
 import 'package:aplicativo_engenharia_de_software/Screen/Login/relogin.dart';
 import 'package:aplicativo_engenharia_de_software/Screen/imoveis.dart';
 import 'package:aplicativo_engenharia_de_software/Screen/perfil.dart';
+import 'package:aplicativo_engenharia_de_software/Screen/suport.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -37,6 +38,7 @@ final routes = GoRouter(
       GoRoute(path: '/perfil', builder: (((context, state) => const Perfil()))),
       GoRoute(
           path: '/imoveis', builder: (((context, state) => const Imoveis()))),
+      GoRoute(path: '/suport', builder: (((context, state) => const Suport()))),
 
       /*   GoRoute(
           path: '/suporte',

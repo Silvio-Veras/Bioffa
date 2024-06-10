@@ -1,7 +1,6 @@
 import 'package:aplicativo_engenharia_de_software/Screen/Home.dart';
 import 'package:aplicativo_engenharia_de_software/custom/global__style.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 class Pesquisa extends StatefulWidget {
   const Pesquisa({super.key});
@@ -220,7 +219,7 @@ class _PesquisaState extends State<Pesquisa> {
                                       'assets/icons/casa.jpg',
                                       height:
                                           MediaQuery.of(context).size.height *
-                                              0.1,
+                                              0.12,
                                     ),
                                     const SizedBox(
                                       width: 10,
@@ -237,13 +236,9 @@ class _PesquisaState extends State<Pesquisa> {
                                             const SizedBox(
                                               width: 50,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.015,
+                                            Image.asset(
+                                              'assets/icons/heart.png',
+                                              width: 25,
                                             ),
                                           ],
                                         ),
@@ -265,57 +260,33 @@ class _PesquisaState extends State<Pesquisa> {
                                         ),
                                         Row(
                                           children: [
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            const SizedBox(
+                                              width: 2,
+                                            ),
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
-                                            ),
-                                            const SizedBox(
-                                              width: 2,
-                                            ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 5,
@@ -357,9 +328,8 @@ class _PesquisaState extends State<Pesquisa> {
                                 ),
                                 child: Row(
                                   children: [
-                                    SvgPicture.asset(
-                                      'assets/icons/eye-open.svg',
-                                      color: CustomColors.customBlack,
+                                    Image.asset(
+                                      'assets/icons/casa1.jpg',
                                       height:
                                           MediaQuery.of(context).size.height *
                                               0.1,
@@ -379,13 +349,9 @@ class _PesquisaState extends State<Pesquisa> {
                                             const SizedBox(
                                               width: 50,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.015,
+                                            Image.asset(
+                                              'assets/icons/heart.png',
+                                              width: 25,
                                             ),
                                           ],
                                         ),
@@ -407,57 +373,29 @@ class _PesquisaState extends State<Pesquisa> {
                                         ),
                                         Row(
                                           children: [
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
-                                            ),
                                             const SizedBox(
                                               width: 2,
-                                            ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
                                             ),
                                             const SizedBox(
                                               width: 5,
@@ -499,12 +437,11 @@ class _PesquisaState extends State<Pesquisa> {
                                 ),
                                 child: Row(
                                   children: [
-                                    SvgPicture.asset(
-                                      'assets/icons/eye-open.svg',
-                                      color: CustomColors.customBlack,
+                                    Image.asset(
+                                      'assets/icons/casa3.jpg',
                                       height:
                                           MediaQuery.of(context).size.height *
-                                              0.1,
+                                              0.08,
                                     ),
                                     const SizedBox(
                                       width: 10,
@@ -521,13 +458,9 @@ class _PesquisaState extends State<Pesquisa> {
                                             const SizedBox(
                                               width: 50,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.015,
+                                            Image.asset(
+                                              'assets/icons/heart.png',
+                                              width: 20,
                                             ),
                                           ],
                                         ),
@@ -549,57 +482,33 @@ class _PesquisaState extends State<Pesquisa> {
                                         ),
                                         Row(
                                           children: [
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
-                                            ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
                                             ),
                                             const SizedBox(
                                               width: 5,
@@ -641,12 +550,11 @@ class _PesquisaState extends State<Pesquisa> {
                                 ),
                                 child: Row(
                                   children: [
-                                    SvgPicture.asset(
-                                      'assets/icons/eye-open.svg',
-                                      color: CustomColors.customBlack,
+                                    Image.asset(
+                                      'assets/icons/casa4.jpg',
                                       height:
                                           MediaQuery.of(context).size.height *
-                                              0.1,
+                                              0.11,
                                     ),
                                     const SizedBox(
                                       width: 10,
@@ -663,13 +571,10 @@ class _PesquisaState extends State<Pesquisa> {
                                             const SizedBox(
                                               width: 50,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.015,
+                                            Image.asset(
+                                              'assets/icons/heart.png',
+                                              width: 25,
+                                              color: CustomColors.customGray,
                                             ),
                                           ],
                                         ),
@@ -691,57 +596,33 @@ class _PesquisaState extends State<Pesquisa> {
                                         ),
                                         Row(
                                           children: [
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            const SizedBox(
+                                              width: 2,
+                                            ),
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
-                                            ),
-                                            const SizedBox(
-                                              width: 2,
-                                            ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 5,
@@ -783,12 +664,11 @@ class _PesquisaState extends State<Pesquisa> {
                                 ),
                                 child: Row(
                                   children: [
-                                    SvgPicture.asset(
-                                      'assets/icons/eye-open.svg',
-                                      color: CustomColors.customBlack,
+                                    Image.asset(
+                                      'assets/icons/casa5.jpg',
                                       height:
                                           MediaQuery.of(context).size.height *
-                                              0.1,
+                                              0.09,
                                     ),
                                     const SizedBox(
                                       width: 10,
@@ -805,13 +685,9 @@ class _PesquisaState extends State<Pesquisa> {
                                             const SizedBox(
                                               width: 50,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.015,
+                                            Image.asset(
+                                              'assets/icons/heart.png',
+                                              width: 25,
                                             ),
                                           ],
                                         ),
@@ -833,57 +709,33 @@ class _PesquisaState extends State<Pesquisa> {
                                         ),
                                         Row(
                                           children: [
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
-                                            ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
                                             ),
                                             const SizedBox(
                                               width: 5,
@@ -925,9 +777,8 @@ class _PesquisaState extends State<Pesquisa> {
                                 ),
                                 child: Row(
                                   children: [
-                                    SvgPicture.asset(
-                                      'assets/icons/eye-open.svg',
-                                      color: CustomColors.customBlack,
+                                    Image.asset(
+                                      'assets/icons/casa6.jpg',
                                       height:
                                           MediaQuery.of(context).size.height *
                                               0.1,
@@ -947,13 +798,10 @@ class _PesquisaState extends State<Pesquisa> {
                                             const SizedBox(
                                               width: 50,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.015,
+                                            Image.asset(
+                                              'assets/icons/heart.png',
+                                              color: CustomColors.customGray,
+                                              width: 20,
                                             ),
                                           ],
                                         ),
@@ -975,57 +823,29 @@ class _PesquisaState extends State<Pesquisa> {
                                         ),
                                         Row(
                                           children: [
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
-                                            ),
                                             const SizedBox(
                                               width: 2,
-                                            ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
                                             ),
                                             const SizedBox(
                                               width: 5,
@@ -1069,12 +889,11 @@ class _PesquisaState extends State<Pesquisa> {
                                 ),
                                 child: Row(
                                   children: [
-                                    SvgPicture.asset(
-                                      'assets/icons/eye-open.svg',
-                                      color: CustomColors.customBlack,
+                                    Image.asset(
+                                      'assets/icons/casa3.jpg',
                                       height:
                                           MediaQuery.of(context).size.height *
-                                              0.1,
+                                              0.08,
                                     ),
                                     const SizedBox(
                                       width: 10,
@@ -1091,13 +910,9 @@ class _PesquisaState extends State<Pesquisa> {
                                             const SizedBox(
                                               width: 50,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.015,
+                                            Image.asset(
+                                              'assets/icons/heart.png',
+                                              width: 20,
                                             ),
                                           ],
                                         ),
@@ -1119,57 +934,33 @@ class _PesquisaState extends State<Pesquisa> {
                                         ),
                                         Row(
                                           children: [
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
-                                            ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
                                             ),
                                             const SizedBox(
                                               width: 5,
@@ -1211,12 +1002,11 @@ class _PesquisaState extends State<Pesquisa> {
                                 ),
                                 child: Row(
                                   children: [
-                                    SvgPicture.asset(
-                                      'assets/icons/eye-open.svg',
-                                      color: CustomColors.customBlack,
+                                    Image.asset(
+                                      'assets/icons/casa4.jpg',
                                       height:
                                           MediaQuery.of(context).size.height *
-                                              0.1,
+                                              0.11,
                                     ),
                                     const SizedBox(
                                       width: 10,
@@ -1233,13 +1023,10 @@ class _PesquisaState extends State<Pesquisa> {
                                             const SizedBox(
                                               width: 50,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.015,
+                                            Image.asset(
+                                              'assets/icons/heart.png',
+                                              width: 25,
+                                              color: CustomColors.customGray,
                                             ),
                                           ],
                                         ),
@@ -1261,57 +1048,33 @@ class _PesquisaState extends State<Pesquisa> {
                                         ),
                                         Row(
                                           children: [
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            const SizedBox(
+                                              width: 2,
+                                            ),
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
-                                            ),
-                                            const SizedBox(
-                                              width: 2,
-                                            ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 5,
@@ -1353,12 +1116,11 @@ class _PesquisaState extends State<Pesquisa> {
                                 ),
                                 child: Row(
                                   children: [
-                                    SvgPicture.asset(
-                                      'assets/icons/eye-open.svg',
-                                      color: CustomColors.customBlack,
+                                    Image.asset(
+                                      'assets/icons/casa5.jpg',
                                       height:
                                           MediaQuery.of(context).size.height *
-                                              0.1,
+                                              0.09,
                                     ),
                                     const SizedBox(
                                       width: 10,
@@ -1375,13 +1137,9 @@ class _PesquisaState extends State<Pesquisa> {
                                             const SizedBox(
                                               width: 50,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.015,
+                                            Image.asset(
+                                              'assets/icons/heart.png',
+                                              width: 25,
                                             ),
                                           ],
                                         ),
@@ -1403,57 +1161,33 @@ class _PesquisaState extends State<Pesquisa> {
                                         ),
                                         Row(
                                           children: [
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
-                                            ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
                                             ),
                                             const SizedBox(
                                               width: 5,
@@ -1495,9 +1229,8 @@ class _PesquisaState extends State<Pesquisa> {
                                 ),
                                 child: Row(
                                   children: [
-                                    SvgPicture.asset(
-                                      'assets/icons/eye-open.svg',
-                                      color: CustomColors.customBlack,
+                                    Image.asset(
+                                      'assets/icons/casa6.jpg',
                                       height:
                                           MediaQuery.of(context).size.height *
                                               0.1,
@@ -1517,13 +1250,10 @@ class _PesquisaState extends State<Pesquisa> {
                                             const SizedBox(
                                               width: 50,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.015,
+                                            Image.asset(
+                                              'assets/icons/heart.png',
+                                              color: CustomColors.customGray,
+                                              width: 20,
                                             ),
                                           ],
                                         ),
@@ -1545,57 +1275,29 @@ class _PesquisaState extends State<Pesquisa> {
                                         ),
                                         Row(
                                           children: [
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
-                                            ),
                                             const SizedBox(
                                               width: 2,
-                                            ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
                                             ),
                                             const SizedBox(
                                               width: 5,
@@ -1639,9 +1341,8 @@ class _PesquisaState extends State<Pesquisa> {
                                 ),
                                 child: Row(
                                   children: [
-                                    SvgPicture.asset(
-                                      'assets/icons/eye-open.svg',
-                                      color: CustomColors.customBlack,
+                                    Image.asset(
+                                      'assets/icons/casa1.jpg',
                                       height:
                                           MediaQuery.of(context).size.height *
                                               0.1,
@@ -1661,13 +1362,9 @@ class _PesquisaState extends State<Pesquisa> {
                                             const SizedBox(
                                               width: 50,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.015,
+                                            Image.asset(
+                                              'assets/icons/heart.png',
+                                              width: 25,
                                             ),
                                           ],
                                         ),
@@ -1689,57 +1386,29 @@ class _PesquisaState extends State<Pesquisa> {
                                         ),
                                         Row(
                                           children: [
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
-                                            ),
                                             const SizedBox(
                                               width: 2,
-                                            ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
                                             ),
                                             const SizedBox(
                                               width: 5,
@@ -1781,9 +1450,8 @@ class _PesquisaState extends State<Pesquisa> {
                                 ),
                                 child: Row(
                                   children: [
-                                    SvgPicture.asset(
-                                      'assets/icons/eye-open.svg',
-                                      color: CustomColors.customBlack,
+                                    Image.asset(
+                                      'assets/icons/casa6.jpg',
                                       height:
                                           MediaQuery.of(context).size.height *
                                               0.1,
@@ -1803,13 +1471,9 @@ class _PesquisaState extends State<Pesquisa> {
                                             const SizedBox(
                                               width: 50,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.015,
+                                            Image.asset(
+                                              'assets/icons/heart.png',
+                                              width: 20,
                                             ),
                                           ],
                                         ),
@@ -1831,57 +1495,29 @@ class _PesquisaState extends State<Pesquisa> {
                                         ),
                                         Row(
                                           children: [
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
+                                            Image.asset(
+                                              'assets/icons/star.png',
+                                              width: 20,
                                             ),
                                             const SizedBox(
                                               width: 2,
                                             ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
-                                            ),
                                             const SizedBox(
                                               width: 2,
-                                            ),
-                                            SvgPicture.asset(
-                                              'assets/icons/eye-open.svg',
-                                              color: CustomColors.customBlack,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.01,
                                             ),
                                             const SizedBox(
                                               width: 5,

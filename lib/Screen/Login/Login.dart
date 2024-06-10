@@ -48,12 +48,13 @@ class _LoginState extends State<Login> {
               ),
               // ignore: prefer_const_constructors
               Column(
-                children: const [
+                children: [
                   /* Logo(), */
-                  Text(
-                    'Bioffa',
-                    style: TextStyle(fontSize: 80),
-                  )
+                  Image.asset(
+                    'assets/icons/logo_bioffa.jpeg',
+                    height: MediaQuery.of(context).size.height * 0.15,
+                    color: CustomColors.customPurpleBioffa,
+                  ),
                 ],
               ),
               const SizedBox(
@@ -217,7 +218,7 @@ class _LoginState extends State<Login> {
                           ),
                           ElevatedButton(
                             onPressed: () {
-                              context.push('/home'); //ainda nao tem
+                              context.go('/home'); //ainda nao tem
                             },
                             style: buttonEntrarLogin(context),
                             child: const Text(
